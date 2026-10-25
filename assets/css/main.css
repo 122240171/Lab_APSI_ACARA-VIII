@@ -138,14 +138,16 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Header & Logo Top Bar
+# Global Header & Navbar Putih yang Proporsional
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 15px 0;
+  background-color: #ffffff !important;
+  padding: 12px 0 !important;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid #eaeaea;
 }
 
 .header .logo {
@@ -153,7 +155,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 45px;
+  max-height: 42px !important;
   width: auto;
   object-fit: contain;
   margin-right: 8px;
@@ -171,8 +173,8 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
-  padding: 8px 25px;
-  margin: 0 0 0 30px;
+  padding: 8px 22px;
+  margin: 0 0 0 25px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -201,7 +203,8 @@ h6 {
 
 /* Global Header on Scroll */
 .scrolled .header {
-  --background-color: rgba(244, 239, 237, 0.95);
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eaeaea;
 }
 
 /*--------------------------------------------------------------
@@ -227,7 +230,7 @@ h6 {
 
   .navmenu>ul>li {
     white-space: nowrap;
-    padding: 15px 14px;
+    padding: 12px 14px;
   }
 
   .navmenu>ul>li:last-child {
@@ -467,123 +470,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
-.footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-size: 14px;
-  position: relative;
-}
-
-.footer .footer-top {
-  padding-top: 50px;
-}
-
-.footer .footer-about .logo {
-  line-height: 1;
-  margin-bottom: 25px;
-}
-
-.footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-about .logo span {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.footer .footer-about p {
-  font-size: 14px;
-  font-family: var(--heading-font);
-}
-
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.footer h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-links ul i {
-  padding-right: 2px;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-links ul a:hover {
-  color: var(--accent-color);
-}
-
-.footer .footer-contact p {
-  margin-bottom: 5px;
-}
-
-.footer .copyright {
-  padding: 25px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.footer .copyright p {
-  margin-bottom: 0;
-}
-
-.footer .credits {
-  margin-top: 8px;
-  font-size: 13px;
-}
-
-/*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
@@ -663,22 +549,22 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Sections
+# Global Sections (Scroll Margin pas di bawah navbar)
 --------------------------------------------------------------*/
 section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 82px;
+  padding: 40px 0;
+  scroll-margin-top: 80px;
   overflow: clip;
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
-    scroll-margin-top: 63px;
+    scroll-margin-top: 65px;
+    padding: 25px 0;
   }
 }
 
@@ -687,15 +573,15 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 25px;
   position: relative;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -703,7 +589,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 45px;
   height: 3px;
   background: var(--accent-color);
   left: 0;
@@ -714,13 +600,14 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 0.95rem;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .hero .hero-content {
@@ -945,46 +832,28 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Services Section / Katalog Produk
 --------------------------------------------------------------*/
 .services {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
 }
 
-.services .services-row {
-  position: relative;
-}
-
-.services .services-headline .services-subtitle {
-  color: var(--accent-color);
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.services .services-headline .services-title {
-  color: var(--heading-color);
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.services .services-description {
-  margin-bottom: 30px;
-}
-
-.services .services-description p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.services .section-title {
+  padding-bottom: 25px !important;
 }
 
 /*--------------------------------------------------------------
-# Contact Section (Diperbaiki agar proporsional, tidak bantet & rapi)
+# Contact Section
 --------------------------------------------------------------*/
 .contact {
   background-color: color-mix(in srgb, var(--background-color), #f5f8fd 30%);
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+.contact .section-title {
+  padding-bottom: 25px !important;
 }
 
 .contact .container {
@@ -995,31 +864,30 @@ section,
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 20px;
   align-items: stretch;
 }
 
 @media (min-width: 992px) {
   .contact .contact-main-wrapper {
     grid-template-columns: 45% 55%;
-    min-height: 600px;
   }
 }
 
 .contact .map-wrapper {
-  height: 300px;
+  height: 280px;
   width: 100%;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 992px) {
   .contact .map-wrapper {
     height: 100%;
-    min-height: 520px;
+    min-height: 380px !important;
     position: sticky;
-    top: 100px;
+    top: 85px;
   }
 }
 
@@ -1027,13 +895,13 @@ section,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 15px;
 }
 
 .contact .contact-cards-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 14px;
 }
 
 @media (min-width: 576px) {
@@ -1044,48 +912,48 @@ section,
 
 .contact .contact-card {
   background-color: var(--surface-color);
-  padding: 24px 20px;
-  border-radius: 14px;
+  padding: 18px 16px;
+  border-radius: 12px;
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  gap: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.04);
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact .contact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .contact .contact-card .icon-box {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact .contact-card .icon-box i {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--accent-color);
 }
 
 .contact .contact-card .contact-text h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: var(--heading-color);
 }
 
 .contact .contact-card .contact-text p {
-  font-size: 13.5px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.4;
   color: var(--default-color);
   margin-bottom: 0;
 }
@@ -1093,22 +961,22 @@ section,
 /* Bagian Tombol Hubungi Kami Langsung di Kontak */
 .social-contact-box {
   background-color: var(--surface-color);
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  padding: 15px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .social-contact-box .social-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--heading-color);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .social-contact-box .social-buttons-wrapper {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -1117,7 +985,7 @@ section,
   border: 1px solid #198754;
   color: #ffffff;
   font-weight: 600;
-  padding: 10px 24px;
+  padding: 7px 20px;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
@@ -1129,7 +997,7 @@ section,
   background-color: #146c43;
   border-color: #13653f;
   color: #ffffff;
-  box-shadow: 0 6px 15px rgba(25, 135, 84, 0.3);
+  box-shadow: 0 5px 12px rgba(25, 135, 84, 0.25);
   transform: translateY(-2px);
 }
 
@@ -1138,7 +1006,7 @@ section,
   border: 1px solid #db2777;
   color: #db2777;
   font-weight: 600;
-  padding: 10px 24px;
+  padding: 7px 20px;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
@@ -1150,19 +1018,19 @@ section,
   background-color: #db2777;
   border-color: #db2777;
   color: #ffffff;
-  box-shadow: 0 6px 15px rgba(219, 39, 119, 0.3);
+  box-shadow: 0 5px 12px rgba(219, 39, 119, 0.25);
   transform: translateY(-2px);
 }
 
 /*--------------------------------------------------------------
-# Custom Product Cards & Harmonized WhatsApp Button on Hover
+# Custom Product Cards (Proporsional & Ramping)
 --------------------------------------------------------------*/
 .product-card {
   background: var(--surface-color);
-  border-radius: 16px;
-  padding: 35px 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  padding: 18px 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1173,11 +1041,11 @@ section,
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 
 .product-card-header h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--heading-color);
   margin: 0;
@@ -1185,15 +1053,15 @@ section,
 }
 
 .product-card-header .product-step {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: color-mix(in srgb, var(--heading-color), transparent 60%);
   transition: color 0.35s ease;
 }
 
 .product-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.83rem;
+  line-height: 1.4;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 0;
   transition: color 0.35s ease;
@@ -1202,15 +1070,15 @@ section,
 /* Styling Info Dimensi Bersih */
 .product-specs {
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-radius: 8px;
-  padding: 8px 12px;
-  margin-bottom: 12px;
-  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
   color: var(--heading-color);
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 /* Tombol WhatsApp Default (Sebelum di-hover) */
@@ -1218,14 +1086,16 @@ section,
   background-color: #198754;
   border-color: #198754;
   color: #ffffff;
+  padding: 5px 10px;
+  font-size: 0.85rem;
   transition: all 0.35s ease;
 }
 
 /* EFEK HOOVER KARTU */
 .product-card:hover {
   background-color: var(--accent-color);
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .product-card:hover .product-card-header h3,
@@ -1252,7 +1122,7 @@ section,
   background-color: #ffffff;
   border-color: #ffffff;
   color: #198754;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .product-card:hover .btn-success:hover {
@@ -1344,46 +1214,47 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Perbaikan Ukuran Gambar Katalog Produk
+# Perbaikan Ukuran Gambar Katalog Produk (Semua Varian Disesuaikan & Diperbesar Proporsional)
 --------------------------------------------------------------*/
 .product-img-wrapper {
-  height: 230px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 10px;
+  padding: 2px;
 }
 
 .product-photo {
-  max-height: 200px;
+  max-height: 190px;
   width: auto;
   object-fit: contain;
   transition: transform 0.35s ease;
 }
 
+/* Skala foto diperbesar agar tidak terlalu kecil */
 .product-small {
-  transform: scale(0.85); 
+  transform: scale(1.18); 
 }
 
 .product-medium {
-  transform: scale(1.1); 
+  transform: scale(1.42); 
 }
 
 .product-large {
-  transform: scale(1.35); 
+  transform: scale(1.68); 
 }
 
 .product-card:hover .product-small {
-  transform: scale(0.95);
+  transform: scale(1.26);
 }
 
 .product-card:hover .product-medium {
-  transform: scale(1.2);
+  transform: scale(1.50);
 }
 
 .product-card:hover .product-large {
-  transform: scale(1.45);
+  transform: scale(1.76);
 }
 
 /*--------------------------------------------------------------
@@ -1457,7 +1328,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Perbaikan Footer Menjadi Lebih Besar, Lega & Proporsional
+# Perbaikan Footer Menjadi Ringkas, Kompak & Tidak Terlalu Besar
 --------------------------------------------------------------*/
 .footer.dark-background {
   background-color: #0c0c0c !important;
@@ -1465,32 +1336,32 @@ section,
 }
 
 .footer .footer-top {
-  padding-top: 80px; /* Diperbesar dari 60px agar ruang atas lebih lega */
-  padding-bottom: 40px; /* Diperbesar dari 20px */
+  padding-top: 45px;
+  padding-bottom: 25px;
 }
 
-/* Memperbesar ukuran logo footer */
+/* Ukuran logo footer disesuaikan agar pas */
 .footer .footer-about .logo img {
-  max-height: 65px; /* Diperbesar dari 48px agar lebih proporsional */
+  max-height: 48px;
   width: auto;
   object-fit: contain;
 }
 
 .footer .footer-desc {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 15px; /* Sedikit diperbesar dari 14px */
-  line-height: 1.7;
-  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin-top: 8px;
   margin-bottom: 0;
 }
 
 .footer h4 {
-  font-size: 18px; /* Judul kolom diperbesar dari 17px */
+  font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   position: relative;
-  padding-bottom: 12px;
-  margin-bottom: 22px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .footer h4::after {
@@ -1498,16 +1369,16 @@ section,
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 40px;
-  height: 2.5px;
+  width: 30px;
+  height: 2px;
   background-color: var(--accent-color);
 }
 
 .footer .footer-contact p {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 14.5px; /* Ukuran teks kontak diperbesar dari 13.5px */
-  line-height: 1.7;
-  margin-bottom: 12px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin-bottom: 6px;
 }
 
 .footer .footer-links ul {
@@ -1517,31 +1388,31 @@ section,
 }
 
 .footer .footer-links ul li {
-  padding: 10px 0; /* Jarak antar link diperbesar */
+  padding: 5px 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .footer .footer-links ul li i {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--accent-color);
 }
 
 .footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px; /* Ukuran teks link produk diperbesar */
+  font-size: 14px;
   transition: 0.3s;
 }
 
 .footer .footer-links ul a:hover {
   color: var(--accent-color);
-  padding-left: 6px;
+  padding-left: 4px;
 }
 
 .footer .social-links a {
-  width: 42px; /* Ukuran tombol sosmed diperbesar dari 38px */
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1549,8 +1420,8 @@ section,
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 18px;
-  margin-right: 12px;
+  font-size: 15px;
+  margin-right: 10px;
   transition: 0.3s;
 }
 
@@ -1562,8 +1433,8 @@ section,
 }
 
 .footer .copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px 0; /* Ruang copyright diperluas */
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
 }
