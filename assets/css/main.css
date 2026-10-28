@@ -1163,7 +1163,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Perbaikan Grid Gambar About & Struktur Organisasi (Ukuran Pas & Proporsional)
+# Perbaikan Grid Gambar About & Struktur Organisasi (Proporsional & Pas Muat 1 Layar)
 --------------------------------------------------------------*/
 .about-image-grid {
   position: relative;
@@ -1233,12 +1233,12 @@ section,
 }
 
 .org-chart-wrapper {
-  max-width: 200px;
+  max-width: 160px;
   margin: 0 auto;
   background: var(--surface-color);
-  border-radius: 10px;
-  padding: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.04);
   margin-top: 15px;
 }
@@ -1246,14 +1246,14 @@ section,
 .org-chart-wrapper img {
   max-width: 100% !important;
   height: auto !important;
-  border-radius: 6px;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .org-chart-wrapper {
-    max-width: 160px !important;
+    max-width: 130px !important;
   }
   .org-chart-wrapper img {
     max-width: 100% !important;
