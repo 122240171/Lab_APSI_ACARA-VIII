@@ -1438,3 +1438,47 @@ section,
   color: rgba(255, 255, 255, 0.55);
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Organizational Chart Styling
+--------------------------------------------------------------*/
+.org-chart-wrapper {
+  background: var(--surface-color);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.org-chart-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Perbaikan Responsif Tombol Pesan Sekarang & Header di Mobile */
+@media (max-width: 1199px) {
+  .header .btn-getstarted {
+    display: inline-block !important;
+    margin: 0 10px 0 auto !important;
+    padding: 5px 12px !important;
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .btn-getstarted {
+    padding: 4px 10px !important;
+    font-size: 11px !important;
+    margin-right: 8px !important;
+  }
+  .header .logo img {
+    max-height: 35px !important;
+  }
+}

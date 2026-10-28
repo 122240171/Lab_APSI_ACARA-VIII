@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>CV Bintang Terang</title>
-  <meta name="description" content="CV Bintang Terang - Pabrik Pembuatan Periuk Aluminium Berkualitas Sejak 2000">
+  <meta name="description" content="CV Bintang Terang - Pabrik Pembuatan Periuk Aluminium Berkualitas">
   <meta name="keywords" content="CV Bintang Terang, Periuk Aluminium, Pabrik Aluminium Medan">
 
   <!-- Favicons -->
@@ -25,6 +25,27 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Responsive Hero Fix for Mobile -->
+  <style>
+    @media (max-width: 768px) {
+      .hero-image-wrapper {
+        margin-top: 2rem;
+        position: relative;
+        padding-bottom: 2rem;
+      }
+      .stat-card.custom-stat-top,
+      .stat-card.custom-stat-bottom {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin-top: 1rem;
+        width: 100% !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -39,23 +60,23 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#services">Produk</a></li>
-          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#beranda" class="active">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#services">Pesan Sekarang</a>
+      <a class="btn-getstarted" href="#produk">Pesan Sekarang</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section Minimalis -->
-    <section id="hero" class="hero section dark-background">
+    <!-- Beranda Section (Hero) -->
+    <section id="beranda" class="hero section dark-background">
       <div class="container" data-aos="fade-up">
         <div class="row align-items-center">
           <div class="col-lg-6">
@@ -65,10 +86,10 @@
                 <span>EST. 2000</span>
               </div>
               <h1>Produsen <span class="highlight">Periuk Aluminium</span> Berkualitas Unggul</h1>
-              <p class="lead mb-4">Pabrik pembuatan alat dapur aluminium terpercaya sejak tahun 2000 di Deli Serdang. Kuat, tahan lama, dan efisien untuk kebutuhan rumah tangga hingga industri.</p>
+              <p class="lead mb-4">Pabrik pembuatan alat dapur aluminium terpercaya di Deli Serdang. Kuat, tahan lama, dan efisien untuk kebutuhan rumah tangga hingga industri.</p>
               
               <div class="hero-cta">
-                <a href="#services" class="btn btn-primary">Lihat Produk</a>
+                <a href="#produk" class="btn btn-primary">Lihat Produk</a>
                 <a href="https://wa.me/6282297745917" target="_blank" class="btn btn-link"><i class="bi bi-whatsapp"></i> +62 822-9774-5917</a>
               </div>
             </div>
@@ -94,10 +115,10 @@
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section><!-- /Beranda Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Tentang Section -->
+    <section id="tentang" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -150,7 +171,7 @@
           </div>
         </div>
 
-        <div class="row align-items-center about-showcase">
+        <div class="row align-items-center about-showcase mb-5">
           <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="300">
             <div class="about-image-grid">
               
@@ -174,7 +195,7 @@
           <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="about-content-box">
               <h3>Sejarah &amp; Profil Perusahaan</h3>
-              <p class="mb-4">CV Bintang Terang adalah perusahaan manufaktur pabrik pembuatan periuk yang terletak di Jl. Komplek Veteran Lorong VI, Deli Serdang / Medan. Beroperasi sejak tahun 2000 di atas lahan permanen seluas 30 m x 25 m, kami mengolah aluminium dan mesin bekas menjadi produk periuk yang hemat, kuat, dan maju dari tahun ke tahun.</p>
+              <p class="mb-4">CV Bintang Terang adalah perusahaan manufaktur pabrik pembuatan periuk yang terletak di Jl. Komplek Veteran Lorong VI, Deli Serdang / Medan. Beroperasi di atas lahan permanen seluas 30 m x 25 m, kami mengolah aluminium dan mesin bekas menjadi produk periuk yang hemat, kuat, dan maju dari tahun ke tahun.</p>
 
               <div class="row text-center mt-4">
                 <div class="col-4">
@@ -195,12 +216,23 @@
           </div>
         </div>
 
+        <!-- Bagian Struktur Organisasi Perusahaan -->
+        <div class="row justify-content-center mt-5 pt-4">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h3 class="section-heading mb-3">Struktur Organisasi Perusahaan</h3>
+            <p class="lead mb-4">Bagan hierarki manajemen dan operasional internal CV Bintang Terang.</p>
+            <div class="org-chart-wrapper p-3 bg-white shadow-sm rounded border">
+              <img src="assets/img/CV Bintang Terang Struktur Organisasi.png" alt="Struktur Organisasi CV Bintang Terang" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- /Tentang Section -->
 
-    <!-- Services / Products Section -->
-    <section id="services" class="services section light-background">
+    <!-- Produk Section -->
+    <section id="produk" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -301,10 +333,10 @@
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Produk Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Kontak Kami</h2>
@@ -375,7 +407,7 @@
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section><!-- /Kontak Section -->
 
   </main>
 
@@ -390,7 +422,7 @@
             <img src="assets/img/CV Bintang Terang Logo White.png" alt="CV Bintang Terang Logo">
           </a>
           <p class="footer-desc">
-            CV Bintang Terang adalah pabrik manufaktur pembuat periuk aluminium berkualitas tinggi dan terpercaya sejak tahun 2000 di Deli Serdang, Sumatera Utara.
+            CV Bintang Terang adalah pabrik manufaktur pembuat periuk aluminium berkualitas tinggi dan terpercaya di Deli Serdang, Sumatera Utara.
           </p>
           <div class="social-links d-flex mt-4">
             <a href="https://wa.me/6282297745917" target="_blank"><i class="bi bi-whatsapp"></i></a>
@@ -412,9 +444,9 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Varian Produk</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Periuk Kecil</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Periuk Sedang</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Periuk Besar</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#produk">Periuk Kecil</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#produk">Periuk Sedang</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#produk">Periuk Besar</a></li>
           </ul>
         </div>
 
