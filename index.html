@@ -25,27 +25,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Custom Responsive Hero Fix for Mobile -->
-  <style>
-    @media (max-width: 768px) {
-      .hero-image-wrapper {
-        margin-top: 2rem;
-        position: relative;
-        padding-bottom: 2rem;
-      }
-      .stat-card.custom-stat-top,
-      .stat-card.custom-stat-bottom {
-        position: relative !important;
-        top: auto !important;
-        bottom: auto !important;
-        left: auto !important;
-        right: auto !important;
-        margin-top: 1rem;
-        width: 100% !important;
-      }
-    }
-  </style>
 </head>
 
 <body class="index-page">
@@ -97,20 +76,25 @@
           <div class="col-lg-6">
             <div class="hero-image-wrapper custom-hero-img-wrap" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/about/Aluminium.jpg" alt="Produksi Aluminium CV Bintang Terang" class="img-fluid hero-image">
-              <div class="stat-card custom-stat-top">
-                <div class="stat-value">26+</div>
-                <div class="stat-label">Tahun Pengalaman</div>
-                <div class="stat-icon">
-                  <i class="bi bi-shield-check"></i>
+              
+              <!-- Wrapper Grid Khusus Statistik Mobile & Desktop -->
+              <div class="stat-cards-mobile-wrapper">
+                <div class="stat-card custom-stat-top">
+                  <div class="stat-value">26+</div>
+                  <div class="stat-label">Tahun Pengalaman</div>
+                  <div class="stat-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                </div>
+                <div class="stat-card custom-stat-bottom">
+                  <div class="stat-value">100%</div>
+                  <div class="stat-label">Aluminium Daur Ulang Pilihan</div>
+                  <div class="stat-icon">
+                    <i class="bi bi-recycle"></i>
+                  </div>
                 </div>
               </div>
-              <div class="stat-card custom-stat-bottom">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">Aluminium Daur Ulang Pilihan</div>
-                <div class="stat-icon">
-                  <i class="bi bi-recycle"></i>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
