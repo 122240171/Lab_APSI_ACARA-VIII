@@ -86,6 +86,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* Kelas Teks Rata Kanan-Kiri (Justify) */
+.text-justify {
+  text-align: justify;
+}
+
 /* PHP Email Form Messages */
 .php-email-form .error-message {
   display: none;
@@ -480,40 +485,6 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-}
-
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -1261,7 +1232,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Perbaikan Footer Menjadi Ringkas & Kompak
+# Perbaikan Footer (Sesuai Gambar 2, Padding Proporsional, Tanpa DesignBy & Scroll Arrow)
 --------------------------------------------------------------*/
 .footer.dark-background {
   background-color: #0c0c0c !important;
@@ -1269,8 +1240,8 @@ section,
 }
 
 .footer .footer-top {
-  padding-top: 45px;
-  padding-bottom: 25px;
+  padding-top: 40px !important; /* Kembali ke jarak proporsional Gambar 2 */
+  padding-bottom: 25px !important;
 }
 
 .footer .footer-about .logo img {
@@ -1284,7 +1255,7 @@ section,
   font-size: 13.5px;
   line-height: 1.55;
   margin-top: 8px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .footer h4 {
@@ -1306,11 +1277,15 @@ section,
   background-color: var(--accent-color);
 }
 
-.footer .footer-contact p {
+.footer-contact-col .footer-contact div {
   color: rgba(255, 255, 255, 0.85);
   font-size: 13.5px;
-  line-height: 1.55;
-  margin-bottom: 6px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-contact-col .footer-contact div:last-child {
+  margin-bottom: 0;
 }
 
 .footer .footer-links ul {
@@ -1342,6 +1317,14 @@ section,
   padding-left: 4px;
 }
 
+.footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 0 !important;
+}
+
 .footer .social-links a {
   width: 36px;
   height: 36px;
@@ -1353,7 +1336,7 @@ section,
   justify-content: center;
   color: #ffffff;
   font-size: 15px;
-  margin-right: 10px;
+  margin-right: 0 !important;
   transition: 0.3s;
 }
 
@@ -1366,9 +1349,19 @@ section,
 
 .footer .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 20px 0;
+  padding: 20px 0 !important; /* Kembali ke padding Gambar 2 agar tidak terlalu dempet */
+  margin-top: 25px !important;
   color: rgba(255, 255, 255, 0.55);
   font-size: 13px;
+}
+
+.footer .credits {
+  display: none !important; /* Menyembunyikan credit/Designed by BootstrapMade secara permanen */
+}
+
+/* Sembunyikan tombol panah scroll bawaan jika ada */
+.scroll-top, a.scroll-top {
+  display: none !important;
 }
 
 /* Perbaikan Responsif Tombol Pesan Sekarang & Header di Mobile */
@@ -1391,4 +1384,105 @@ section,
   .header .logo img {
     max-height: 35px !important;
   }
+}
+
+/*--------------------------------------------------------------
+# Custom Modern Organization Tree (Struktur Organisasi)
+--------------------------------------------------------------*/
+.org-tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.org-node-level {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.org-card {
+  background: var(--surface-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.org-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-color);
+}
+
+.org-card.primary-node {
+  background: linear-gradient(135deg, var(--heading-color), #2c6294);
+  color: #ffffff;
+  border: none;
+}
+
+.org-card.primary-node h5,
+.org-card.primary-node span {
+  color: #ffffff !important;
+}
+
+.org-card.primary-node .org-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.org-icon {
+  width: 40px;
+  height: 40px;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px auto;
+  font-size: 1.1rem;
+}
+
+.org-card h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 2px;
+}
+
+.org-card span {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-weight: 500;
+}
+
+/* Garis penghubung vertikal antar kotak */
+.org-connector {
+  width: 3px;
+  height: 25px;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  position: relative;
+}
+
+.org-connector::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--accent-color);
 }
